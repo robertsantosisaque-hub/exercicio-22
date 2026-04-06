@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustando imagem de fundo</title>
+    <style>
+        body {
+            background-color: bisque;
+            background-image: url('./imagens-cap19/wallpaper002.jpg'); /* Substitua 'wallpaper.jpg' pelo caminho da sua imagem de fundo */
+            background-size: cover; /* Ajuste a imagem de fundo para cobrir toda a área */
+            background-position: center; /* Centraliza a imagem de fundo */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente para melhor legibilidade */
+            padding: 20px;
+            border-radius: 10px;
+            text-indent: 10px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Como faço para ajustar a imagem de fundo?</h1>
+        <p>Para ajustar a imagem de fundo, você pode usar a propriedade <code>background-size</code> no CSS.</p>
+        <p>Existem várias opções para ajustar a imagem de fundo:</p>
+        <ul>
+            <li><code>cover</code>: A imagem de fundo será redimensionada para cobrir toda a área do elemento, mantendo a proporção da imagem. Isso pode resultar em partes da imagem sendo cortadas.</li>
+            <li><code>contain</code>: A imagem de fundo será redimensionada para caber dentro da área do elemento, mantendo a proporção da imagem. Isso pode resultar em áreas vazias ao redor da imagem.</li>
+            <li><code>auto</code>: A imagem de fundo manterá seu tamanho original. Se a imagem for maior que a área do elemento, ela será cortada.</li>
+            <li><code>100% 100%</code>: A imagem de fundo será esticada para preencher toda a área do elemento, o que pode distorcer a imagem.</li>
+        </ul>
+        <p>Exemplo de uso:</p>
+        <pre>body {
+    background-image: url('sua-imagem.jpg');
+    background-size: cover;
+    }</pre>
+    <h2>
+    Dica: Use a propriedade <code>background-position</code> para ajustar a posição da imagem de fundo, caso ela seja cortada ou esticada.
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus commodi consectetur odio repellat provident sit error, blanditiis tenetur in autem quas molestiae eum nam, cum sequi velit nihil debitis reiciendis.</p>
+
+
+    </main>
+    
+</body>
+</html>
